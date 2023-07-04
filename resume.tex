@@ -1,0 +1,122 @@
+\documentclass[8pt]{extarticle}
+\usepackage{enumitem}
+\usepackage[letterpaper, margin=.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{bookmark}
+
+\author{Alexander Carter}
+
+\hypersetup{
+  pdftitle={\theauthor},
+  pdfauthor={\theauthor},
+  hidelinks,
+}
+
+\setlist{noitemsep}                  % minimum item separation in lists
+\setlength\parindent{0pt}            % \noindent by default
+\titleformat{\section}{\normalfont\Large\bfseries}{}{0em}{}[{\titlerule[0.8pt]}] % underline section headings
+
+\newcommand{\jobentry}[4]{\textbf{#1,} \textit{#2} \(|\) #3\hfill \textit{#4}}
+\renewcommand{\maketitle}{\begin{center}\Huge\theauthor\end{center}\vspace{.5em}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+  Binghamton, NY
+  \(|\)
+  +1 (845) 522 6134
+  \(|\)
+  \href{mailto://acarter6@binghamton.edu}{acarter6@binghamton.edu}
+  \(|\)
+  \href{https://github.com/caraterra}{https://github.com/caraterra}
+\end{center}
+
+\section{Education}
+
+\textbf{Binghamton University, SUNY} \(|\) Thomas J. Watson College of Engineering and Applied Science
+
+\textit{Bachelor of Science in Computer Science} -- Expected December 2023
+
+\textbf{Cumulative GPA:} 3.33/4.00
+
+\textbf{Relevant Coursework:} Computer Networks, Operating Systems, Systems Programming, Data Structures and Algorithms
+
+\section{Technical Skills}
+
+\textbf{Languages:} Python, Shell, Rust, C++, C, PHP, Javascript
+
+\textbf{Software and OS:} Git, Linux, Make, Cargo, Bash, Vim, Subversion, Cron, Oracle Database
+
+\textbf{Additional:} Regex, HTML, CSS, XML Parsing, Markdown, {\LaTeX}
+
+\section{Professional Experience}
+
+\jobentry{Binghamton University ITS}{Student Assistant Developer}{Binghamton, NY}{June 2021 -- Present}
+
+\begin{itemize}
+  \item{Develop intuitive web applications for a variety of University offices using Graphene, a powerful open-source full-stack framework developed in-house}
+  \item{Streamline and automate backend processes using Oracle Database libraries and Python to facilitate the seamless and efficient transfer of data between University systems}
+  \item{Collaborate closely with administrative offices to understand their specific needs and requirements for front-end and back-end applications}
+\end{itemize}
+
+\section{Project Experience}
+
+\jobentry{Regex Library}{Rust Library Developer}{Personal Project}{February 2023 -- Present}
+
+\begin{itemize}
+  \item{Applying concepts from automata theory to produce a functional regular expression engine}
+  \item{Implement algorithms to perform lexical and syntactic analysis on input strings to produce nondeterministic finite automata representations of regular expressions}
+  \item{Engineer a comprehensive series of unit tests using Cargo’s robust testing framework to guarantee the correctness and reliability of each library component}
+\end{itemize}
+
+\jobentry{Peer-to Peer Chat Program}{Rust Applications Developer}{Group Project}{May 2023}
+
+\begin{itemize}
+\item{Collaborated with a small team to develop a highly performant peer-to-peer chat program by actively contributing to the project's codebase through GitHub Issues and Pull Requests}
+\item{Leveraged advanced asynchronous programming techniques to significantly enhance the responsiveness and performance of the system}
+\end{itemize}
+
+\jobentry{HTTP Server and HTTP Proxy}{Python Developer}{Group Project}{February 2023 -- March 2023}
+
+\begin{itemize}
+  \item{Worked closely with a small group of developers to successfully create a comprehensive suite of functional HTTP network applications}
+  \item{Encouraged adherence to PEP8 style guidelines by integrating code formatting and static analysis tools into our workflow}
+  \item{Researched RFC standards to maximize interoperability with other HTTP applications}
+\end{itemize}
+
+\jobentry{Literate Programming System}{Rust Applications Programmer}{Individual Project}{February 2023}
+
+\begin{itemize}
+  \item{Designed and developed a tool that seamlessly extracts Rust code blocks from Markdown documentation and weaves them into valid source code files}
+  \item{Exemplified a strong work ethic by completing the project within a 24 hour timeframe during HackBU 2023}
+  \item{Showcased the functionality of this tool to a distinguished panel of judges consisting of esteemed Binghamton University faculty and representatives from prominent companies}
+\end{itemize}
+
+\jobentry{Base64 Library}{C Library Developer}{Personal Project}{January 2023 -- February 2023}
+
+\begin{itemize}
+  \item{Developed a simple and intuitive library for the C language that allows programmers to perform binary-to-text conversions using Base64 encoding schemes}
+  \item{Supported a variety of RFC-standard encoding schemes to ensure maximum compatibility with many projects and systems}
+  \item{Tested the library functionality using a suite of comprehensive unit tests built with the powerful Unity framework}
+\end{itemize}
+
+\jobentry{XV6 Operating System Improvements}{C Systems Programmer}{Individual Project}{January 2022 -- May 2022}
+
+\begin{itemize}
+  \item{Wrote a versatile UNIX-like shell using the C programming language, equipped with essential functionality such as piping, file redirection, and background process execution}
+  \item{Implemented a lazy page allocator for the XV6 operating system, greatly reducing average memory usage by only allocating pages when they are first accessed}
+  \item{Designed a Multi-Level Feedback Queue CPU scheduler for the XV6 operating system, boosting overall system performance by shortening response times and eliminating process starvation}
+\end{itemize}
+
+\section{Extracurricular Experience}
+
+\jobentry{Advent of Code}{Python Developer}{Individual Programming Challenge}{December 2022}
+\begin{itemize}
+  \item{Participated in a month-long programming event alongside 270,000 other programmers, completing daily challenges and achieving a respectable score of 30 out of 50}
+\end{itemize}
+\end{document}
